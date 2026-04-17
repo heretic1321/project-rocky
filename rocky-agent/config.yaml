@@ -1,0 +1,27 @@
+llm:
+  provider: ollama
+  model: gemma4:e4b
+  base_url: http://localhost:11434
+
+stt:
+  provider: faster-whisper
+  model: base.en
+  device: cuda
+  compute_type: float16
+  language: en
+
+tts:
+  provider: piper
+  model: en_US-ryan-low
+  sample_rate: 22050
+
+robot:
+  url: http://192.168.4.1
+
+audio:
+  input_device: default
+  output_device: default
+
+idle:
+  min_interval: 10
+  max_interval: 30
