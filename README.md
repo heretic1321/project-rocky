@@ -1,3 +1,26 @@
+# Project Rocky — a Sesame-derived quadruped
+
+> **This repository is a derivative work.** Project Rocky is a fork of the
+> [**Sesame Robot** by Dorian Todd (`dorianborian`)](https://github.com/dorianborian/sesame-robot).
+> All hardware design, firmware foundation, 3D-printable parts, and the original
+> captive-portal control UI are Dorian's work, licensed Apache 2.0.
+>
+> What this fork adds on top of Sesame:
+> - `rocky-agent/` — a local voice agent (faster-whisper STT → Ollama LLM →
+>   Piper TTS) with an in-browser push-to-talk + debug control panel.
+> - `rocky-cli/` — a small CLI for scripting movement/face commands over WiFi.
+> - ESP32-S3 Mini pin remap for the *Project Rocky* build variant.
+> - PCM-driven viseme mouth-animation (inspired by Dorian's
+>   [sesame-companion-app](https://github.com/dorianborian/sesame-companion-app),
+>   re-implemented to drive from the synthesized waveform directly instead of
+>   mic loopback) and a "talking body bob" background animator.
+>
+> See [`ATTRIBUTION.md`](ATTRIBUTION.md) for the full list of upstream sources
+> and their licenses. If you are building a Sesame robot from scratch, start
+> at Dorian's repo — it's the canonical one.
+
+---
+
 # The Sesame Robot Project 
 ___
 ![License](https://img.shields.io/badge/License-APACHE2.0-yellow)

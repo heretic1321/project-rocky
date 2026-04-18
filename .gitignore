@@ -1,1 +1,14 @@
 .vscode/launch.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# rocky-agent — local runtime state
+rocky-agent/models/
+rocky-agent/config.overrides.yaml
+
+# misc local scratch
+codex-review-output.txt
